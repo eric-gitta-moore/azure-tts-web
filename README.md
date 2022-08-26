@@ -40,6 +40,10 @@ SSML代码
 # 墙裂推荐 Azure [有声内容创作门户](https://aka.ms/audiocontentcreation)
 ![11](./docs/images/img_2.png)
 
+# 相关教程
+
+> 1. [配音与字幕教程（含魔云熙调音教程）](https://mp.weixin.qq.com/s/HqQ0500EhPGtLdYKUTeEwg)
+
 # Q/A
 
 ### 代码都是存您的本机，请知晓
