@@ -1,22 +1,30 @@
-import {defineConfig} from 'umi';
+import { defineConfig } from 'umi';
 import MonacoWebpackPlugin from 'monaco-editor-webpack-plugin';
-import * as path from "path";
+import * as path from 'path';
+import { Resolve } from '@umijs/bundler-webpack/compiled/webpack-5-chain';
 
 export default defineConfig({
-  base: './',
-  publicPath: './',
-  nodeModulesTransform: {
-    type: 'none',
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  history: {
+    type: 'hash',
   },
-  routes: [
-    {path: '/', component: '@/pages/index'},
-  ],
-  fastRefresh: {},
-  webpack5: {},
-  chainWebpack(memo) {
-    memo.plugin('monaco-editor-webpack-plugin').use(MonacoWebpackPlugin, [{
-      languages: ['xml']
-    }]);
+  routes: [{ path: '/', component: '@/pages/index' }],
+  antd: {
+    // configProvider
+    configProvider: {},
+    import: true,
+    // less or css, default less
+    style: 'less',
+  },
+  fastRefresh: true,
+  chainWebpack: (...args) => {
+    const memo = (args as any)[0] as Resolve;
+    memo.plugin('monaco-editor-webpack-plugin').use(MonacoWebpackPlugin, [
+      {
+        languages: ['xml'],
+      },
+    ]);
 
     memo.merge({
       module: {
@@ -27,13 +35,13 @@ export default defineConfig({
             include: [/node_modules[\\\/]monaco-editor[\\\/]esm/],
             use: {
               'MonacoWebpackPluginESM.loader': {
-                loader: path.resolve(__dirname, './loader.js')
-              }
-            }
-          }
-        }
-      }
-    })
+                loader: path.resolve(__dirname, './loader.js'),
+              },
+            },
+          },
+        },
+      },
+    });
 
     memo.merge({
       module: {
@@ -43,14 +51,17 @@ export default defineConfig({
             test: /node_modules[\\\/]monaco-editor[\\\/]esm[\\\/]vs[\\\/]nls\.js/,
             use: {
               'monaco-editor-nls-webpack-plugin': {
-                loader: path.resolve(__dirname, './monaco-editor-nls-webpack-plugin.js'),
-              }
-            }
-          }
-        }
-      }
-    })
+                loader: path.resolve(
+                  __dirname,
+                  './monaco-editor-nls-webpack-plugin.js',
+                ),
+              },
+            },
+          },
+        },
+      },
+    });
 
     // console.log(memo.toString())
-  }
+  },
 });
