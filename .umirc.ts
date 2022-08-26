@@ -4,8 +4,8 @@ import * as path from 'path';
 import { Resolve } from '@umijs/bundler-webpack/compiled/webpack-5-chain';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? './' : '/',
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/azure-tts-web/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/azure-tts-web/' : '/',
   history: {
     type: 'hash',
   },
