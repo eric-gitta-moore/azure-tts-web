@@ -1,15 +1,5 @@
-# umi project
+# 在web页面中使用azure文字转语音功能
 
-## Getting Started
+网页地址：https://james-curtis.github.io/azure-tts-web/
 
-Install dependencies,
-
-```bash
-$ yarn
-```
-
-Start the dev server,
-
-```bash
-$ yarn start
-```
+![img](./docs/images/img.png)
