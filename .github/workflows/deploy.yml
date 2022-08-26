@@ -44,6 +44,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          folder: dist/editor
+          folder: dist
           git-config-name: github-actions[bot]
           git-config-email: github-actions[bot]@users.noreply.github.com
