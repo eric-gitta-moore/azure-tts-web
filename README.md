@@ -86,4 +86,19 @@
   </voice>
 </speak>
 ```
+# Q/A
 
+### 代码都是存您的本机，请知晓
+```tsx
+class Storage {
+  static getItem(key: string) {
+    if (IN_UTOOLS) return utools.dbStorage.getItem(key)
+    return localStorage.getItem(key);
+  }
+
+  static setItem(key: string, data: any) {
+    if (IN_UTOOLS) return utools.dbStorage.setItem(key, data)
+    return localStorage.setItem(key, data);
+  }
+}
+```
