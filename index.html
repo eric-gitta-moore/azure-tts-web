@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>首页 - 知乎</title>
+  <link rel="stylesheet" href="知乎.css"/>
+  <link rel="shortcut icon" href="知乎网页1.png"/>
+</head>
+
+<body>
+<div class="banner">
+  <nav class="nav">
+        <span
+        ><svg
+          viewBox="0 0 64 30"
+          fill="#056DE8"
+          width="64"
+          height="30"
+          class="css-1hlrcxk"
+        >
+            <path
+              d="M29.05 4.582H16.733V25.94h3.018l.403 2.572 4.081-2.572h4.815V4.582zm-5.207 18.69l-2.396 1.509-.235-1.508h-1.724V7.233h6.78v16.04h-2.425zM14.46 14.191H9.982c0-.471.033-.954.039-1.458v-5.5h5.106V5.935a1.352 1.352 0 0 0-.404-.957 1.378 1.378 0 0 0-.968-.396H5.783c.028-.088.056-.177.084-.255.274-.82 1.153-3.326 1.153-3.326a4.262 4.262 0 0 0-2.413.698c-.57.4-.912.682-1.371 1.946-.532 1.453-.997 2.856-1.31 3.693C1.444 8.674.28 11.025.28 11.025a5.85 5.85 0 0 0 2.52-.61c1.119-.593 1.679-1.502 2.054-2.883l.09-.3h2.334v5.5c0 .5-.045.982-.073 1.46h-4.12c-.71 0-1.39.278-1.893.775a2.638 2.638 0 0 0-.783 1.874h6.527a17.717 17.717 0 0 1-.778 3.649 16.796 16.796 0 0 1-3.012 5.273A33.104 33.104 0 0 1 0 28.74s3.13 1.175 5.425-.954c1.388-1.292 2.631-3.814 3.23-5.727a28.09 28.09 0 0 0 1.12-5.229h5.967v-1.37a1.254 1.254 0 0 0-.373-.899 1.279 1.279 0 0 0-.909-.37z"
+            ></path>
+            <path
+              d="M11.27 19.675l-2.312 1.491 5.038 7.458a6.905 6.905 0 0 0 .672-2.218 3.15 3.15 0 0 0-.28-2.168l-3.118-4.563zM51.449 15.195V5.842c4.181-.205 7.988-.405 9.438-.483l.851-.05c.387-.399.885-2.395.689-3.021-.073-.25-.213-.666-.638-.555a33.279 33.279 0 0 1-4.277.727c-2.766.321-3.97.404-7.804.682-6.718.487-12.709.72-12.709.72a2.518 2.518 0 0 0 .788 1.834 2.567 2.567 0 0 0 1.883.706c2.278-.095 5.598-.25 8.996-.41v9.203h-12.78c0 .703.281 1.377.783 1.874a2.69 2.69 0 0 0 1.892.777h10.105v7.075c0 .887-.464 1.192-1.231 1.214h-3.92a4.15 4.15 0 0 0 .837 1.544 4.2 4.2 0 0 0 1.403 1.067 6.215 6.215 0 0 0 2.71.277c1.36-.066 2.967-.826 2.967-3.57v-7.607h11.28c.342 0 .67-.135.91-.374.242-.239.378-.563.378-.902v-1.375H51.449z"
+            ></path>
+            <path
+              d="M42.614 8.873a2.304 2.304 0 0 0-1.508-.926 2.334 2.334 0 0 0-1.727.405l-.376.272 4.255 5.85 2.24-1.62-2.884-3.98zM57.35 8.68l-3.125 4.097 2.24 1.663 4.517-5.927-.375-.277a2.32 2.32 0 0 0-1.722-.452 2.327 2.327 0 0 0-1.536.896z"
+            ></path></svg
+        ></span>
+    <ul class="shouye">
+      <li class="home"><a href="#home">首页</a></li>
+      <li><a href="#study">学习</a></li>
+      <li><a href="#vip">会员</a></li>
+      <li><a href="#discrove">发现</a></li>
+      <li><a href="#wait">等你来答</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text"/>
+      <div>提问</div>
+      <span> </span>
+    </div>
+    <div class="Popover" style="margin-right: 30px">
+      <button
+        aria-label="通知"
+        id="c"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-owns="Popover17-content"
+        type="button"
+        class="Button--plain"
+      >
+            <span style="display: inline-flex; align-items: center"
+            >​<svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              data-new-api="BellFill24"
+              data-old-api="Bell"
+              class="Zi Zi--Bell css-7dgah8"
+              fill="currentColor"
+            >
+                <path
+                  d="M9.723 21.271c0-.42.34-.76.76-.76h3.043a.76.76 0 010 1.521h-3.043a.76.76 0 01-.76-.76z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  d="M11.153 3.115c0-.618.376-1.115.844-1.115.469 0 .845.499.845 1.115v.183c3.997.369 7.012 4.117 7.024 8.515v5.655h.253a.76.76 0 110 1.521H3.891a.76.76 0 010-1.521h.253v-5.655c.011-4.392 3.02-8.137 7.009-8.514v-.184z"
+                ></path></svg
+            ></span>
+        <div class="css-1n5shmo">消息</div>
+      </button>
+      <button
+        aria-label="私信"
+        id="Popover18-toggle"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-owns="Popover18-content"
+        type="button"
+        class="Button AppHeader-messages css-79elbk Button--plain"
+      >
+            <span style="display: inline-flex; align-items: center"
+            >​<svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              data-new-api="ChatBubbleTwoFill24"
+              data-old-api="Comments"
+              class="Zi Zi--Comments css-7dgah8"
+              fill="currentColor"
+            >
+                <path
+                  d="M2 11c0 1.79.553 3.45 1.498 4.82L2.6 18.667a.6.6 0 00.751.753l3.07-.96A8.5 8.5 0 102 11zm11.46 9.414c-.457.16-.506.794-.034.904A6.96 6.96 0 0015 21.5c1.148 0 2.422-.31 3.444-.912.357-.217.658-.378 1.043-.252l1.414.42c.357.112.679-.168.574-.546l-.47-1.57a.736.736 0 01.05-.632c.602-1.108.945-2.32.945-3.498 0-1.07-.248-2.11-.7-3.046-.21-.435-.815-.25-.872.23-.47 3.954-3.211 7.394-6.968 8.72z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path></svg
+            ></span>
+        <div class="css-1n5shmo">私信</div>
+      </button>
+      <button
+        id="Popover15-toggle"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-owns="Popover15-content"
+        type="button"
+        class="Button AppHeader-profileEntry Button--plain"
+      >
+        <img
+          class="Avatar AppHeader-profileAvatar"
+          width="30"
+          height="30 "
+          src="https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_is.jpg?source=32738c0c"
+          srcset="
+                https://picx.zhimg.com/v2-abed1a8c04700ba7d72b45195223e0ff_im.jpg?source=32738c0c 2x
+              "
+          alt="点击打开三昧清酒的主页"
+        />
+      </button>
+    </div>
+  </nav>
+</div>
+<article>
+  <div class="article_left">
+    <div class="ting" style="display: block, visibility=visible">
+      <div>
+        <div class="article_left_banner" style="margin-bottom: 7px">
+          <a
+            class="Business-Card-PcTopFeedBanner-link"
+            href="https://sugar.zhihu.com/glory_adreaper/glory_log?ed=CjEEKVQqOStoVjtaUDEtA1lxCn0Vc2N2fAhmVARhYVJTIwBnW3E4eXkQNwEHZ3pVTSRDdwl2YnBoRDsDDGh9CVJzHzpRfmtwexNkQVI5cQlfdQ58HiIvfXwWZ1EXPDkNWnULfwl2aXJ5E3QXWDRxHVonJ7C0TFHUfQ%3D%3D&amp;ts=1661309128&amp;pf=Windows&amp;tue=AQENERpeSUEVDg1XEx0QCRxKBQEPVgAPABEcDkZVU1pXSUxIXkRMWFBTVV9SQE1PI-FYkIKhLSM%3D&amp;dsgtplid=0&amp;st=brandCtrContrast&amp;zr=0&amp;lr=1&amp;ar=0.0132&amp;ut=da416153c32c4da2879c4ecf57c87a40&amp;coi=1545061715997310976&amp;ct=2&amp;bi=2977&amp;ui=110.52.67.102&amp;cc=431000&amp;cty=zvideo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div
+              class="
+                    AdvertImg AdvertImg--isLoaded
+                    Business-Card-PcTopFeedBanner-img
+                  "
+            >
+              <img
+                src="https://pic2.zhimg.com/70/v2-324cd4fb935a99cd1ceba45408388ded.webp"
+              />
+            </div>
+          </a>
+        </div>
+        <div style="background-color: #fff">
+          <ul class="daohang">
+            <li class="attention" index="0">
+              <a href="#attention">关注</a>
+            </li>
+            <li index="1"><a href="#recommend">推荐</a></li>
+            <li index="2"><a href="#hot">热榜</a></li>
+            <li index="3"><a href="#video">视频</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner_ting" style="margin: 0; background-color: #fff">
+        <div class="banner_ting_top">
+          <h2 style="margin-left: 10px">
+            <a>有一个霸道的男朋友是什么体验？</a>
+          </h2>
+          <div>
+            <div class="banner_ting_topinner">
+                  <span
+                    style="
+                      word-break: break-word;
+                      line-height: 1.6;
+                      word-wrap: break-word;
+                    "
+                  >
+                    小尘： 我和当初霸凌我的人在一起了。
+                    浴室的半身镜里，朦胧的雾气也掩盖不了我身上某些扎眼的痕迹。手腕上，被他烟头烫过的伤痕，外圈已凸起一层增生的疤。…
+                  </span>
+              <button style="margin-left: 4px; color: #175199">
+                阅读全文
+                <span style="display: inline-flex; align-items: center"
+                >​<svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  data-new-api="ArrowDownSmall24"
+                  data-old-api="ArrowDown"
+                  class="Zi Zi--ArrowDown ContentItem-arrowIcon"
+                  fill="currentColor"
+                >
+                        <path
+                          d="M12 13.248L8.22 9.223a.684.684 0 00-1.01 0 .796.796 0 000 1.075l4.15 4.42a.867.867 0 001.28 0l4.15-4.42a.796.796 0 000-1.075.684.684 0 00-1.01 0L12 13.248z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                        ></path></svg
+                ></span>
+              </button>
+            </div>
+            <div class="banner_ting_topdown">
+                  <span class="zantong">
+                    <button style="width: 120px; height: 30px">
+                      <span style="display: inline-flex; align-items: center">
+                        ​
+                        <svg
+                          width="10"
+                          height="10"
+                          viewBox="0 0 24 24"
+                          data-new-api="AgreeFill24"
+                          data-old-api="TriangleUp"
+                          class="Zi Zi--TriangleUp VoteButton-TriangleUp"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M13.792 3.681c-.781-1.406-2.803-1.406-3.584 0l-7.79 14.023c-.76 1.367.228 3.046 1.791 3.046h15.582c1.563 0 2.55-1.68 1.791-3.046l-7.79-14.023z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      赞同7179
+                    </button>
+                    <button style="height: 30px; width: 30px">
+                      <span style="display: inline-flex; align-items: center">
+                        ​
+                        <svg
+                          width="10"
+                          height="10"
+                          viewBox="0 0 24 24"
+                          data-new-api="OpposeFill24"
+                          data-old-api="TriangleDown"
+                          class="Zi Zi--TriangleDown"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M13.792 20.319c-.781 1.406-2.803 1.406-3.584 0L2.418 6.296c-.76-1.367.228-3.046 1.791-3.046h15.582c1.563 0 2.55 1.68 1.791 3.046l-7.79 14.023z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+              <span>
+                    <button>
+                      <span style="display: inline-flex; align-items: center">
+                        ​
+                        <svg
+                          width="1.2em"
+                          height="1.2em"
+                          viewBox="0 0 24 24"
+                          data-new-api="ChatBubbleFill24"
+                          data-old-api="Comment"
+                          class="Zi Zi--Comment Button-zi"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M12 2.75a9.25 9.25 0 104.737 17.197l2.643.817a1 1 0 001.25-1.25l-.8-2.588A9.25 9.25 0 0012 2.75z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      1,840条评论
+                    </button>
+                  </span>
+              <span>
+                    <button>
+                      <span style="display: inline-flex; align-items: center">
+                        ​
+                        <svg
+                          width="1.2em"
+                          height="1.2em"
+                          viewBox="0 0 24 24"
+                          data-new-api="PaperplaneFill24"
+                          data-old-api="Share"
+                          class="Zi Zi--Share Button-zi"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M19.47 1.914a.8.8 0 011.204.778l-1.872 16.386a.9.9 0 01-1.204.743l-4.615-1.692a.7.7 0 00-.831.28l-1.927 3.02c-.43.674-1.474.369-1.474-.43v-3.865a.8.8 0 01.179-.504l5.808-7.148a.595.595 0 00-.897-.781l-5.93 6.354a1.1 1.1 0 01-1.258.252L2.57 13.46a.8.8 0 01-.08-1.415l16.98-10.13z"
+                          ></path>
+                        </svg>
+                      </span>
+                      分享
+                    </button>
+                  </span>
+              <span>
+                    <button>
+                      <span style="display: inline-flex; align-items: center">
+                        ​
+                        <svg
+                          width="1.2em"
+                          height="1.2em"
+                          viewBox="0 0 24 24"
+                          data-new-api="StarFill24"
+                          data-old-api="Star"
+                          class="Zi Zi--Star Button-zi"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M10.484 3.307c.673-1.168 2.358-1.168 3.032 0l2.377 4.122a.25.25 0 00.165.12l4.655.987c1.319.28 1.84 1.882.937 2.884l-3.186 3.535a.25.25 0 00-.063.193l.5 4.733c.142 1.34-1.222 2.33-2.453 1.782l-4.346-1.938a.25.25 0 00-.204 0l-4.346 1.938c-1.231.549-2.595-.442-2.453-1.782l.5-4.733a.25.25 0 00-.064-.193L2.35 11.42c-.903-1.002-.382-2.604.937-2.884l4.655-.987a.25.25 0 00.164-.12l2.378-4.122z"
+                          ></path>
+                        </svg> </span
+                      >收藏
+                    </button>
+                  </span>
+              <span>
+                    <button>
+                      <span style="display: inline-flex; align-items: center">
+                        ​
+                        <svg
+                          width="1.2em"
+                          height="1.2em"
+                          viewBox="0 0 24 24"
+                          data-new-api="HeartFill24"
+                          data-old-api="Heart"
+                          class="Zi Zi--Heart Button-zi"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M12.004 4.934c1.015-.944 2.484-1.618 3.98-1.618 3.48 0 6.53 3.265 6.15 7.614-.11 1.254-.686 2.55-1.458 3.753-.778 1.215-1.79 2.392-2.845 3.419-1.054 1.028-2.168 1.923-3.161 2.566a9.96 9.96 0 01-1.41.777c-.418.182-.862.32-1.268.32s-.848-.137-1.267-.317a9.918 9.918 0 01-1.407-.771c-.992-.64-2.103-1.53-3.156-2.555-1.052-1.024-2.062-2.2-2.84-3.417-.77-1.208-1.346-2.51-1.456-3.775-.38-4.349 2.67-7.614 6.15-7.614 1.484 0 2.983.673 3.988 1.618z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg> </span
+                      >喜欢
+                    </button>
+                  </span>
+              <span>
+                    <button>···</button>
+                  </span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="banner_ting" style="margin: 0; background-color: #fff">
+          <div class="banner_ting_top">
+            <h2 style="margin-left: 10px">
+              <a>有一个霸道的男朋友是什么体验？</a>
+            </h2>
+            <div>
+              <div class="banner_ting_topinner">
+                    <span
+                      style="
+                        word-break: break-word;
+                        line-height: 1.6;
+                        word-wrap: break-word;
+                      "
+                    >
+                      小尘： 我和当初霸凌我的人在一起了。
+                      浴室的半身镜里，朦胧的雾气也掩盖不了我身上某些扎眼的痕迹。手腕上，被他烟头烫过的伤痕，外圈已凸起一层增生的疤。…
+                    </span>
+                <button style="margin-left: 4px; color: #175199">
+                  阅读全文
+                  <span style="display: inline-flex; align-items: center"
+                  >​<svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-new-api="ArrowDownSmall24"
+                    data-old-api="ArrowDown"
+                    class="Zi Zi--ArrowDown ContentItem-arrowIcon"
+                    fill="currentColor"
+                  >
+                          <path
+                            d="M12 13.248L8.22 9.223a.684.684 0 00-1.01 0 .796.796 0 000 1.075l4.15 4.42a.867.867 0 001.28 0l4.15-4.42a.796.796 0 000-1.075.684.684 0 00-1.01 0L12 13.248z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div class="banner_ting_topdown">
+                    <span class="zantong">
+                      <button style="width: 120px; height: 30px">
+                        <span style="display: inline-flex; align-items: center">
+                          ​
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            data-new-api="AgreeFill24"
+                            data-old-api="TriangleUp"
+                            class="Zi Zi--TriangleUp VoteButton-TriangleUp"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M13.792 3.681c-.781-1.406-2.803-1.406-3.584 0l-7.79 14.023c-.76 1.367.228 3.046 1.791 3.046h15.582c1.563 0 2.55-1.68 1.791-3.046l-7.79-14.023z"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                        赞同7179
+                      </button>
+                      <button style="height: 30px; width: 30px">
+                        <span style="display: inline-flex; align-items: center">
+                          ​
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            data-new-api="OpposeFill24"
+                            data-old-api="TriangleDown"
+                            class="Zi Zi--TriangleDown"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M13.792 20.319c-.781 1.406-2.803 1.406-3.584 0L2.418 6.296c-.76-1.367.228-3.046 1.791-3.046h15.582c1.563 0 2.55 1.68 1.791 3.046l-7.79 14.023z"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                <span>
+                      <button>
+                        <span style="display: inline-flex; align-items: center">
+                          ​
+                          <svg
+                            width="1.2em"
+                            height="1.2em"
+                            viewBox="0 0 24 24"
+                            data-new-api="ChatBubbleFill24"
+                            data-old-api="Comment"
+                            class="Zi Zi--Comment Button-zi"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M12 2.75a9.25 9.25 0 104.737 17.197l2.643.817a1 1 0 001.25-1.25l-.8-2.588A9.25 9.25 0 0012 2.75z"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                        1,840条评论
+                      </button>
+                    </span>
+                <span>
+                      <button>
+                        <span style="display: inline-flex; align-items: center">
+                          ​
+                          <svg
+                            width="1.2em"
+                            height="1.2em"
+                            viewBox="0 0 24 24"
+                            data-new-api="PaperplaneFill24"
+                            data-old-api="Share"
+                            class="Zi Zi--Share Button-zi"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M19.47 1.914a.8.8 0 011.204.778l-1.872 16.386a.9.9 0 01-1.204.743l-4.615-1.692a.7.7 0 00-.831.28l-1.927 3.02c-.43.674-1.474.369-1.474-.43v-3.865a.8.8 0 01.179-.504l5.808-7.148a.595.595 0 00-.897-.781l-5.93 6.354a1.1 1.1 0 01-1.258.252L2.57 13.46a.8.8 0 01-.08-1.415l16.98-10.13z"
+                            ></path>
+                          </svg>
+                        </span>
+                        分享
+                      </button>
+                    </span>
+                <span>
+                      <button>
+                        <span style="display: inline-flex; align-items: center">
+                          ​
+                          <svg
+                            width="1.2em"
+                            height="1.2em"
+                            viewBox="0 0 24 24"
+                            data-new-api="StarFill24"
+                            data-old-api="Star"
+                            class="Zi Zi--Star Button-zi"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M10.484 3.307c.673-1.168 2.358-1.168 3.032 0l2.377 4.122a.25.25 0 00.165.12l4.655.987c1.319.28 1.84 1.882.937 2.884l-3.186 3.535a.25.25 0 00-.063.193l.5 4.733c.142 1.34-1.222 2.33-2.453 1.782l-4.346-1.938a.25.25 0 00-.204 0l-4.346 1.938c-1.231.549-2.595-.442-2.453-1.782l.5-4.733a.25.25 0 00-.064-.193L2.35 11.42c-.903-1.002-.382-2.604.937-2.884l4.655-.987a.25.25 0 00.164-.12l2.378-4.122z"
+                            ></path>
+                          </svg> </span
+                        >收藏
+                      </button>
+                    </span>
+                <span>
+                      <button>
+                        <span style="display: inline-flex; align-items: center">
+                          ​
+                          <svg
+                            width="1.2em"
+                            height="1.2em"
+                            viewBox="0 0 24 24"
+                            data-new-api="HeartFill24"
+                            data-old-api="Heart"
+                            class="Zi Zi--Heart Button-zi"
+                            fill="currentColor"
+                          >
+                            <path
+                              d="M12.004 4.934c1.015-.944 2.484-1.618 3.98-1.618 3.48 0 6.53 3.265 6.15 7.614-.11 1.254-.686 2.55-1.458 3.753-.778 1.215-1.79 2.392-2.845 3.419-1.054 1.028-2.168 1.923-3.161 2.566a9.96 9.96 0 01-1.41.777c-.418.182-.862.32-1.268.32s-.848-.137-1.267-.317a9.918 9.918 0 01-1.407-.771c-.992-.64-2.103-1.53-3.156-2.555-1.052-1.024-2.062-2.2-2.84-3.417-.77-1.208-1.346-2.51-1.456-3.775-.38-4.349 2.67-7.614 6.15-7.614 1.484 0 2.983.673 3.988 1.618z"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg> </span
+                        >喜欢
+                      </button>
+                    </span>
+                <span>
+                      <button>···</button>
+                    </span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="banner_ting"
+            style="margin: 0; background-color: #fff"
+          >
+            <div class="banner_ting_top">
+              <h2 style="margin-left: 10px">
+                <a>有一个霸道的男朋友是什么体验？</a>
+              </h2>
+              <div>
+                <div class="banner_ting_topinner">
+                      <span
+                        style="
+                          word-break: break-word;
+                          line-height: 1.6;
+                          word-wrap: break-word;
+                        "
+                      >
+                        小尘： 我和当初霸凌我的人在一起了。
+                        浴室的半身镜里，朦胧的雾气也掩盖不了我身上某些扎眼的痕迹。手腕上，被他烟头烫过的伤痕，外圈已凸起一层增生的疤。…
+                      </span>
+                  <button style="margin-left: 4px; color: #175199">
+                    阅读全文
+                    <span style="display: inline-flex; align-items: center"
+                    >​<svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      data-new-api="ArrowDownSmall24"
+                      data-old-api="ArrowDown"
+                      class="Zi Zi--ArrowDown ContentItem-arrowIcon"
+                      fill="currentColor"
+                    >
+                            <path
+                              d="M12 13.248L8.22 9.223a.684.684 0 00-1.01 0 .796.796 0 000 1.075l4.15 4.42a.867.867 0 001.28 0l4.15-4.42a.796.796 0 000-1.075.684.684 0 00-1.01 0L12 13.248z"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path></svg
+                    ></span>
+                  </button>
+                </div>
+                <div class="banner_ting_topdown">
+                      <span class="zantong">
+                        <button style="width: 120px; height: 30px">
+                          <span
+                            style="display: inline-flex; align-items: center"
+                          >
+                            ​
+                            <svg
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              data-new-api="AgreeFill24"
+                              data-old-api="TriangleUp"
+                              class="Zi Zi--TriangleUp VoteButton-TriangleUp"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M13.792 3.681c-.781-1.406-2.803-1.406-3.584 0l-7.79 14.023c-.76 1.367.228 3.046 1.791 3.046h15.582c1.563 0 2.55-1.68 1.791-3.046l-7.79-14.023z"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                          赞同7179
+                        </button>
+                        <button style="height: 30px; width: 30px">
+                          <span
+                            style="display: inline-flex; align-items: center"
+                          >
+                            ​
+                            <svg
+                              width="10"
+                              height="10"
+                              viewBox="0 0 24 24"
+                              data-new-api="OpposeFill24"
+                              data-old-api="TriangleDown"
+                              class="Zi Zi--TriangleDown"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M13.792 20.319c-.781 1.406-2.803 1.406-3.584 0L2.418 6.296c-.76-1.367.228-3.046 1.791-3.046h15.582c1.563 0 2.55 1.68 1.791 3.046l-7.79 14.023z"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </span>
+                  <span>
+                        <button>
+                          <span
+                            style="display: inline-flex; align-items: center"
+                          >
+                            ​
+                            <svg
+                              width="1.2em"
+                              height="1.2em"
+                              viewBox="0 0 24 24"
+                              data-new-api="ChatBubbleFill24"
+                              data-old-api="Comment"
+                              class="Zi Zi--Comment Button-zi"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M12 2.75a9.25 9.25 0 104.737 17.197l2.643.817a1 1 0 001.25-1.25l-.8-2.588A9.25 9.25 0 0012 2.75z"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                          1,840条评论
+                        </button>
+                      </span>
+                  <span>
+                        <button>
+                          <span
+                            style="display: inline-flex; align-items: center"
+                          >
+                            ​
+                            <svg
+                              width="1.2em"
+                              height="1.2em"
+                              viewBox="0 0 24 24"
+                              data-new-api="PaperplaneFill24"
+                              data-old-api="Share"
+                              class="Zi Zi--Share Button-zi"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M19.47 1.914a.8.8 0 011.204.778l-1.872 16.386a.9.9 0 01-1.204.743l-4.615-1.692a.7.7 0 00-.831.28l-1.927 3.02c-.43.674-1.474.369-1.474-.43v-3.865a.8.8 0 01.179-.504l5.808-7.148a.595.595 0 00-.897-.781l-5.93 6.354a1.1 1.1 0 01-1.258.252L2.57 13.46a.8.8 0 01-.08-1.415l16.98-10.13z"
+                              ></path>
+                            </svg>
+                          </span>
+                          分享
+                        </button>
+                      </span>
+                  <span>
+                        <button>
+                          <span
+                            style="display: inline-flex; align-items: center"
+                          >
+                            ​
+                            <svg
+                              width="1.2em"
+                              height="1.2em"
+                              viewBox="0 0 24 24"
+                              data-new-api="StarFill24"
+                              data-old-api="Star"
+                              class="Zi Zi--Star Button-zi"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M10.484 3.307c.673-1.168 2.358-1.168 3.032 0l2.377 4.122a.25.25 0 00.165.12l4.655.987c1.319.28 1.84 1.882.937 2.884l-3.186 3.535a.25.25 0 00-.063.193l.5 4.733c.142 1.34-1.222 2.33-2.453 1.782l-4.346-1.938a.25.25 0 00-.204 0l-4.346 1.938c-1.231.549-2.595-.442-2.453-1.782l.5-4.733a.25.25 0 00-.064-.193L2.35 11.42c-.903-1.002-.382-2.604.937-2.884l4.655-.987a.25.25 0 00.164-.12l2.378-4.122z"
+                              ></path>
+                            </svg> </span
+                          >收藏
+                        </button>
+                      </span>
+                  <span>
+                        <button>
+                          <span
+                            style="display: inline-flex; align-items: center"
+                          >
+                            ​
+                            <svg
+                              width="1.2em"
+                              height="1.2em"
+                              viewBox="0 0 24 24"
+                              data-new-api="HeartFill24"
+                              data-old-api="Heart"
+                              class="Zi Zi--Heart Button-zi"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M12.004 4.934c1.015-.944 2.484-1.618 3.98-1.618 3.48 0 6.53 3.265 6.15 7.614-.11 1.254-.686 2.55-1.458 3.753-.778 1.215-1.79 2.392-2.845 3.419-1.054 1.028-2.168 1.923-3.161 2.566a9.96 9.96 0 01-1.41.777c-.418.182-.862.32-1.268.32s-.848-.137-1.267-.317a9.918 9.918 0 01-1.407-.771c-.992-.64-2.103-1.53-3.156-2.555-1.052-1.024-2.062-2.2-2.84-3.417-.77-1.208-1.346-2.51-1.456-3.775-.38-4.349 2.67-7.614 6.15-7.614 1.484 0 2.983.673 3.988 1.618z"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg> </span
+                          >喜欢
+                        </button>
+                      </span>
+                  <span>
+                        <button>···</button>
+                      </span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner_ting"><img src="白敬亭2.jpg"/></div>
+          <div class="banner_ting"><img src="白敬亭3.jpg" alt=""/></div>
+          <div class="banner_ting"><img src="白敬亭4.jpg"/></div>
+        </div>
+        <div class="ting"><img src="白敬亭2.jpg"/></div>
+        <div class="ting"><img src="白敬亭3.jpg" alt=""/></div>
+        <div class="ting"><img src="白敬亭4.jpg"/></div>
+      </div>
+    </div>
+  </div>
+  <div class="article_right">
+    <div class="article_right_up">
+      <div class="article_right_up_head">
+        <div style="margin: 10px 5px 0 10px">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            data-new-api="UserPencilFill24"
+            data-old-api="Creator"
+            class="Zi Zi--Creator CreatorEntrance-creatorIcon"
+            fill="currentColor"
+          >
+            <path
+              d="M6.5 7.5A5.5 5.5 0 0112 2a5.5 5.5 0 015.5 5.5A5.5 5.5 0 0112 13a5.5 5.5 0 01-5.5-5.5zm8.11 9.498c.404-.408.91-1 1.17-1.51.067-.133.13-.284.165-.442.034-.15.058-.373-.033-.602a.872.872 0 00-.545-.509 1.37 1.37 0 00-.604-.043c-.657.082-1.518.184-2.373.24-.867.055-1.68.058-2.254-.041-1.189-.204-2.045-.19-2.781.087-.722.272-1.25.773-1.804 1.302-1.533 1.462-2.434 3.311-2.65 4.831-.11.78.535 1.339 1.199 1.339h8.1a.96.96 0 00.955-.929c.06-1.767.7-2.96 1.456-3.723zm6.504-1.568a.75.75 0 10-1.228-.86l-2.903 4.146a.75.75 0 001.229.86l2.902-4.146zm-4.227 6.099a.75.75 0 10-1.241-.842l-.267.392a.75.75 0 001.242.842l.266-.392z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          创作中心
+          <div></div>
+        </div>
+        <div style="float: right; width: 87px; margin-top: 20px">
+          草稿箱
+          <span> (0) </span>
+        </div>
+      </div>
+      <div class="article_right_up_body">
+        <div style="padding-left: 12px">
+          <button style="background-image: url(image1.png)"></button>
+          <div>回答问题</div>
+        </div>
+        <div>
+          <button style="background-image: url(image2.png)"></button>
+          <div>发视频</div>
+        </div>
+        <div>
+          <button style="background-image: url(image3.png)"></button>
+          <div>写文章</div>
+        </div>
+        <div>
+          <button style="background-image: url(image4.png)"></button>
+          <div>写想法</div>
+        </div>
+      </div>
+      <div class="article_right_up_foot">
+        <div>
+          <div class="article_right_up_foot1">
+            <div class="article_right_up_lfoot">
+              <div class="article_right_up_lfoot1">
+                开启你的知乎创作之旅
+              </div>
+              <div class="article_right_up_lfoot2">
+                发布首篇内容，开通创作中心 快来成为知乎创作者吧～
+              </div>
+            </div>
+            <div class="article_right_up_rfoot">
+              <img
+                src="https://static.zhihu.com/heifetz/assets/kanshan.7de41a9a.png"
+                alt=""
+                width="61"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article_right_up_end" style="display: flex">
+        <a class="article_right_up_end1" style="display: flex">
+          <div>+</div>
+          <div>开始创作</div>
+        </a>
+      </div>
+    </div>
+    <div class="article_right_down">
+      <div class="article_right_down_head">
+        <div style="margin: 0 5px 0 10px">
+          <svg
+            width="1.2em"
+            height="1.2em"
+            viewBox="0 0 24 24"
+            data-new-api="UserPlusFill24"
+            data-old-api="UserPlusFill24"
+            class="ZDI ZDI--UserPlusFill24 css-1alihcs"
+            fill="currentColor"
+          >
+            <path
+              d="M5.5 7.5A5.5 5.5 0 0111 2a5.5 5.5 0 015.5 5.5A5.5 5.5 0 0111 13a5.5 5.5 0 01-5.5-5.5zm8.11 9.498c.404-.408.91-1 1.17-1.51.067-.133.13-.284.165-.442.034-.15.058-.373-.033-.602a.872.872 0 00-.545-.509 1.37 1.37 0 00-.604-.043c-.657.082-1.518.184-2.373.24-.867.055-1.68.058-2.254-.041-1.189-.204-2.045-.19-2.781.087-.722.272-1.25.773-1.804 1.302-1.533 1.462-2.434 3.311-2.65 4.831-.11.78.535 1.339 1.199 1.339h8.1a.96.96 0 00.955-.929c.06-1.767.7-2.96 1.456-3.723zm5.596-2.292a.706.706 0 00-1.412 0v2.588h-2.588a.706.706 0 000 1.412h2.588v2.588a.706.706 0 101.412 0v-2.588h2.588a.706.706 0 000-1.412h-2.588v-2.588z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          推荐关注
+          <div></div>
+        </div>
+      </div>
+      <div>身体</div>
+      <div>足</div>
+    </div>
+  </div>
+</article>
+
+<script>
+  var shouye = document.querySelector('.shouye');
+  var lis = shouye.querySelectorAll('li');
+  var ting = document.querySelectorAll('.ting');
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].setAttribute('index', i);
+    lis[i].onclick = function () {
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].className = 'discurrent';
+      }
+      this.className = 'current';
+      var index = this.getAttribute('index');
+      for (i = 0; i < ting.length; i++) {
+        ting[i].style.display = 'none';
+      }
+      ting[index].style.display = 'block';
+    };
+  }
+</script>
+<script>
+  var daohang = document.querySelector('.daohang');
+  var lis = daohang.querySelectorAll('li');
+  var ting = document.querySelectorAll('.banner_ting');
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].setAttribute('index', i);
+    lis[i].onclick = function () {
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].className = 'discurrent';
+      }
+      this.className = 'current';
+      var index = this.getAttribute('index');
+      for (i = 0; i < ting.length; i++) {
+        ting[i].style.display = 'none';
+      }
+      ting[index].style.display = 'block';
+    };
+  }
+</script>
+</body>
+</html>

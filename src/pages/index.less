@@ -1,0 +1,24 @@
+.wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  :global {
+    .button-group {
+      display: flex;
+      gap: 10px;
+
+      .button-item {
+        flex: 1;
+      }
+    }
+  }
+}
+
+:global {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}

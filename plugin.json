@@ -1,0 +1,13 @@
+{
+  "main": "./dist/index.html",
+  "logo": "azure-tts.png",
+  "features": [
+    {
+      "code": "azure-tts",
+      "cmds": [
+        "azure",
+        "tts"
+      ]
+    }
+  ]
+}
