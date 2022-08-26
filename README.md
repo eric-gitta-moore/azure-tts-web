@@ -102,3 +102,8 @@ class Storage {
   }
 }
 ```
+
+### 免费额度
+
+参考官网：https://azure.microsoft.com/zh-cn/pricing/details/cognitive-services/speech-services/
+![img](./docs/images/img_1.png)
