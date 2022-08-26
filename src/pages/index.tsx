@@ -7,17 +7,39 @@ import MonacoEditor from 'react-monaco-editor';
 
 const LOCATION_KEY_NAME = 'key'
 const LOCATION_REGION_NAME = 'ssml'
+
+let IN_UTOOLS = false
+try {
+  console.log(utools);
+  IN_UTOOLS = true
+} catch (e) {
+
+}
+
+class Storage {
+  static getItem(key: string) {
+    if (IN_UTOOLS) return utools.dbStorage.getItem(key)
+    return localStorage.getItem(key);
+  }
+
+  static setItem(key: string, data: any) {
+    if (IN_UTOOLS) return utools.dbStorage.setItem(key, data)
+    return localStorage.setItem(key, data);
+  }
+}
+
 const App = () => {
   const [ssml, setSSML] = useState('')
-  const [key, setKey] = useState(utools.dbStorage.getItem(LOCATION_KEY_NAME))
-  const [region, setRegion] = useState(utools.dbStorage.getItem(LOCATION_REGION_NAME))
+  const [key, setKey] = useState(Storage.getItem(LOCATION_KEY_NAME))
+  const [region, setRegion] = useState(Storage.getItem(LOCATION_REGION_NAME))
 
   function dispatchKey(str: string) {
-    utools.dbStorage.setItem(LOCATION_KEY_NAME, str);
+    Storage.setItem(LOCATION_KEY_NAME, str);
     setKey(str)
   }
+
   function dispatchRegion(str: string) {
-    utools.dbStorage.setItem(LOCATION_REGION_NAME, str);
+    Storage.setItem(LOCATION_REGION_NAME, str);
     setRegion(str)
   }
 
@@ -88,7 +110,8 @@ const App = () => {
         options={{automaticLayout: true}}
         onChange={(e) => setSSML(e)}
       />
-      <Input.Password placeholder='请填写azure中语音服务的密钥。密钥1或2选择一个即可' value={key} onChange={(e) => dispatchKey(e.target.value)}/>
+      <Input.Password placeholder='请填写azure中语音服务的密钥。密钥1或2选择一个即可' value={key}
+                      onChange={(e) => dispatchKey(e.target.value)}/>
       <Input.Password placeholder='位置/区域，例如japaneast' value={region} onChange={(e) => dispatchRegion(e.target.value)}/>
       <div className='button-group'>
         <Button className='button-item' type="default" onClick={testSpeech}>试听</Button>
